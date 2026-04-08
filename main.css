@@ -1,0 +1,49 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --green: #00ff00;
+    --dark-bg: #121212;
+    --gray: #333;
+}
+
+/* Tema claro */
+.light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnBg: var(--green);
+    --btnFontColor: var(--black);
+}
+
+/* Tema escuro */
+.dark-theme {
+    --bg: var(--dark-bg);
+    --fontColor: var(--white);
+    --btnBg: var(--gray);
+    --btnFontColor: var(--white);
+}
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    font-family: Helvetica;
+}
+
+.list {
+    list-style: square;
+}
+
+/* Botão */
+.btn {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
